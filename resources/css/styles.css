@@ -1,3 +1,11 @@
+
+.dark-mode {
+  background-color: black;
+}
+.dark-mode-header{
+  background-color: #4C4E52;
+  color:white
+}
 body,
 html {
     height: 100vh;
@@ -59,6 +67,10 @@ footer {
   position: relative;
 }
 
+.yoursDarkMode {
+  color:black
+}
+
 .yours .message:before {
   content: "";
   position: absolute;
@@ -79,7 +91,7 @@ footer {
   left: -10px;
   width: 10px;
   height: 20px;
-  background: white;
+  
   border-bottom-right-radius: 10px;
 }
 
@@ -116,6 +128,6 @@ footer {
   right: -10px;
   width: 10px;
   height: 20px;
-  background: white;
+
   border-bottom-left-radius: 10px;
 }
