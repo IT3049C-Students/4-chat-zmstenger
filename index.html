@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="resources/css/styles.css" />
   </head>
 
-  <body>
+  <body id="my-body">
     <header>
-      <div class="jumbotron">
+      <div id = 'jumbotron' class="jumbotron">
         <h1 class="display-4">IT-3049C Chat</h1>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
@@ -33,8 +33,11 @@
             type="text"
             class="form-control"
             placeholder="Name"
-            ... value="Zach Stenger"
+            ... value=""
           />
+            <button id="save-name" class="btn btn-outline-primary">Save Username</button>
+            <button id="clear-user-data" class="btn btn-outline-primary">Clear User Data</button>
+            <button id="toggle-dark-mode" class="btn btn-outline-primary" >Toggle dark mode</button>
         </div>
       </div>
     </header>
@@ -55,7 +58,7 @@
             </div>
         </div>
         
-        <div class="yours messages">
+        <div id="yours-messages" class="yours messages">
             <div class="message">
                 You there?
             </div>
