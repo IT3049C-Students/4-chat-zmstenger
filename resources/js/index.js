@@ -10,7 +10,7 @@ const darkModeBtn = document.getElementById('toggle-dark-mode')
 const clearUserDataBtn = document.getElementById('clear-user-data')
 const serverURL = `https://it3049c-chat-application.herokuapp.com/messages`;
 const nameProvided = false
-const username = localStorage.getItem('username')
+const username = sessionStorage.getItem('username')
 
 
 function toggleDarkMode() {
@@ -80,6 +80,7 @@ async function updateMessages () {
 saveNameButton.addEventListener("click", function (saveNameButtonClickEvent) {
   saveNameButtonClickEvent.preventDefault();
   localStorage.setItem('username', nameInput.value)
+  sessionStorage.setItem('username', nameInput.value)
   myMessage.placeholder = 'Type a message ...'
   myMessage.disabled = false
 });
@@ -114,5 +115,5 @@ if(username===null){
   myMessage.disabled=true
 }
 
-
+updateMessages()
 setInterval(updateMessages, 10000);
